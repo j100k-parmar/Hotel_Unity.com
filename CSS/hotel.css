@@ -1,24 +1,96 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-.banner {
-    width: 100%;
-    height: 100vh;
-    background-image: url(../img/hilltop-hero.jpg);
-    background-repeat: no-repeat;
+
+/* navbar */
+
+.carousel-item {
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+
+.carousel-caption {
+    bottom: 270px;
+}
+
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.carousel-caption p {
+    width: 75%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(26, 65, 97);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(26, 65, 97);
+}
+
+.navbar-toggler {
+    background: #fff;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.nav-link {
+    padding: .2rem 1rem;
+}
+
+.nav-link.active,
+.nav-link:focus {
+    color: rgb(26, 65, 97);
+}
+
+.navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+}
+
+.navbar-brand img {
+    width: 100px;
+}
+
+.navbar-toggler {
+    position: relative;
+    top: -25px;
+    right: 25px;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
 }
 
 .contact_info {
     position: absolute;
     right: 60px;
-    color: #c29039;
+    top: 0;
+    color: rgb(26, 65, 97);
     background-color: white;
     padding: 2px 4px;
     border-radius: 0 0 10px 10px;
@@ -28,26 +100,13 @@ body {
     text-decoration: none;
 }
 
-.menu {
-    margin: 30px 0 0 110px;
-}
-
-.menu ul li {
-    padding-left: 20px;
-}
-
-
-/* .menu ul li a:hover {
-                                background-color: white;
-                                color: #c29039;
-                            } */
-
-.menu ul li a {
-    text-decoration: none;
+.above_info {
+    position: absolute;
+    top: 0;
 }
 
 .enquiry a {
-    background-color: #c29039;
+    background-color: rgb(26, 65, 97);
 }
 
 .logo {
@@ -60,14 +119,37 @@ body {
     width: 100%;
 }
 
+.navbar {
+    background: #e5dddd;
+}
+
 .enquiry {
     background-color: white;
     position: absolute;
-    bottom: 50px;
+    top: 113px;
+    right: 72px;
+    width: 300px;
+}
+
+.enquiry h2 {
+    color: rgb(26, 65, 97);
+}
+
+select {
+    width: 100%;
+}
+
+.enquiry input,
+select {
+    margin: 8px 10px;
+}
+
+.about {
+    clear: both;
 }
 
 .about h1 {
-    color: #c29039;
+    color: rgb(26, 65, 97);
 }
 
 .about p {
@@ -83,17 +165,24 @@ body {
 }
 
 .read a {
-    background-color: #c29039;
+    background-color: rgb(26, 65, 97);
 }
 
 .s {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     border: 2px solid gray;
     color: gray;
-    padding: 30px;
-    margin: 30px;
+    padding: 20px;
+    margin: 20px;
     background-color: rgb(217, 217, 245);
+}
+
+.s:hover {
+    background-color: rgb(26, 65, 97);
+    color: white;
+    transform: translate(-10px, -10px);
+    transition: 1s;
 }
 
 .booking {
@@ -101,7 +190,7 @@ body {
 }
 
 .booking a {
-    background-color: #c29039;
+    background-color: rgb(26, 65, 97);
 }
 
 .prev,
@@ -110,7 +199,7 @@ body {
     width: 50px;
     height: 50px;
     border: 1px solid gray;
-    color: #c29039;
+    color: rgb(26, 65, 97);
 }
 
 .prev:hover {
@@ -128,7 +217,7 @@ body {
 }
 
 .address_info {
-    background-color: #c29039;
+    background-color: rgb(26, 65, 97);
 }
 
 
@@ -143,7 +232,7 @@ body {
 
 .stay_about h1,
 .photos h1 {
-    color: #c29039;
+    color: rgb(26, 65, 97);
 }
 
 .stay_about p,
@@ -170,7 +259,7 @@ body {
 /* contact.html */
 
 .contact_page h1 {
-    color: #c29039;
+    color: rgb(26, 65, 97);
 }
 
 body {
@@ -224,6 +313,10 @@ span {
     display: none;
 }
 
+footer {
+    background-color: rgb(26, 65, 97);
+}
+
 @media screen and (max-height: 450px) {
     .overlay a {
         font-size: 20px
@@ -239,6 +332,9 @@ span {
 /* Responsive */
 
 @media only screen and (max-width:428px) {
+    .banner img {
+        height: 100vh;
+    }
     .overlay {
         display: block;
     }
@@ -249,15 +345,14 @@ span {
         display: none;
     }
     .enquiry input {
-        margin: 10px 0;
+        margin: 6px 0;
         width: 75%;
     }
     .enquiry {
-        bottom: 20px;
-        left: 0;
+        bottom: 6px;
+        left: 65px;
         top: 177px;
         text-align: center;
-        clear: both;
     }
     .enquiry select {
         width: 75%;
@@ -285,9 +380,9 @@ span {
     .address_info .row {
         flex-direction: column;
     }
-    footer {
+    /* footer {
         flex-direction: column;
-    }
+    } */
     .hotel_packages .row {
         flex-direction: column;
     }
