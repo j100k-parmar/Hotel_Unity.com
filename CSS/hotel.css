@@ -317,6 +317,16 @@ footer {
     background-color: rgb(26, 65, 97);
 }
 
+.hotel_packages img {
+    border-radius: 45px;
+    box-shadow: -1px 3px 25px 4px grey;
+}
+
+.hotel_packages img:hover {
+    opacity: 0.7;
+    ;
+}
+
 @media screen and (max-height: 450px) {
     .overlay a {
         font-size: 20px
@@ -426,9 +436,6 @@ footer {
         flex-direction: column;
     }
     .photos .row {
-        flex-direction: column;
-    }
-    .contact {
         flex-direction: column;
     }
 }
