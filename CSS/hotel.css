@@ -41,11 +41,11 @@ body {
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show>.nav-link {
-    color: rgb(26, 65, 97);
+    color: midnightblue;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: rgb(26, 65, 97);
+    color: white;
 }
 
 .navbar-toggler {
@@ -62,7 +62,7 @@ body {
 
 .nav-link.active,
 .nav-link:focus {
-    color: rgb(26, 65, 97);
+    color: steelblue;
 }
 
 .navbar-toggler {
@@ -83,14 +83,14 @@ body {
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #fff;
+    color: goldenrod;
 }
 
 .contact_info {
     position: absolute;
     right: 60px;
     top: 0;
-    color: rgb(26, 65, 97);
+    color: midnightblue;
     background-color: white;
     padding: 2px 4px;
     border-radius: 0 0 10px 10px;
@@ -119,29 +119,54 @@ body {
     width: 100%;
 }
 
+.nav-item a {
+    color: white;
+    font-size: 20px;
+}
+
+.nav-item a:hover {
+    color: goldenrod;
+}
+
+.dropdown button {
+    background: none;
+    color: white;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.carousel-item img {
+    height: 90vh;
+}
+
 .navbar {
-    background: #e5dddd;
+    background: rgb(26, 65, 97);
 }
 
 .enquiry {
     background-color: white;
     position: absolute;
-    top: 113px;
-    right: 72px;
-    width: 300px;
+    top: 430px;
+    left: 140px;
+    width: 80%;
+    padding: 5px;
 }
 
 .enquiry h2 {
     color: rgb(26, 65, 97);
 }
 
-select {
+
+/* select {
     width: 100%;
-}
+} */
 
 .enquiry input,
 select {
-    margin: 8px 10px;
+    margin: 8px 8px;
+    width: 180px;
 }
 
 .about {
@@ -309,23 +334,65 @@ body {
     font-size: 60px;
 }
 
-span {
-    display: none;
+.dropdown :hover {
+    color: goldenrod;
 }
 
 footer {
     background-color: rgb(26, 65, 97);
 }
 
-.hotel_packages img {
-    border-radius: 45px;
-    box-shadow: -1px 3px 25px 4px grey;
+footer .btn {
+    color: white;
+    background-color: rgb(26, 65, 97);
 }
 
-.hotel_packages img:hover {
-    opacity: 0.7;
-    ;
+iframe {
+    width: 70%;
+    padding: 30px;
 }
+
+
+/* package */
+
+.rooms {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.pkg img {
+    width: 100%;
+    transition: .3s all ease-in-out;
+    transform: scale(1);
+}
+
+.pkg img:hover {
+    transform: scale(1.2);
+}
+
+
+/* .money {
+    width: 180px;
+    background-color: rgb(26, 65, 97);
+    color: white;
+    padding: 0;
+} */
+
+.pkg_info .btn {
+    background-color: rgb(26, 65, 97);
+}
+
+
+/* .hotel_packages img:hover {
+    opacity: 0.7;
+} */
+
+
+/* .pkg {
+    box-shadow: 2px 4px 15px 2px grey;
+} */
 
 @media screen and (max-height: 450px) {
     .overlay a {
@@ -402,6 +469,10 @@ footer {
     .contact {
         flex-direction: column;
     }
+    iframe {
+        width: 100%;
+        height: 500px;
+    }
 }
 
 @media only screen and (min-width:428px) and (max-width:770px) {
@@ -427,16 +498,20 @@ footer {
     .address_info .row {
         flex-direction: column;
     }
-    footer {
+    /* footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
+    } */
     .hotel_packages .row {
         flex-direction: column;
     }
     .photos .row {
         flex-direction: column;
+    }
+    iframe {
+        width: 100%;
+        height: 500px;
     }
 }
 
@@ -462,5 +537,9 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    iframe {
+        width: 100%;
+        height: 500px;
     }
 }
