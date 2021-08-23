@@ -5,3 +5,6 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
+$(window).scroll(function() {
+    $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+});
